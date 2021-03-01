@@ -1,14 +1,15 @@
 {
-	"name": "unicorn-fun",
+	"name": "netlify-form-handler",
 	"version": "0.0.0",
-	"description": "My awesome module",
+	"description": "Easy form submission for to Netlify forms.",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun",
+	"repository": "davidroyer/netlify-form-handler",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "David Royer",
+		"email": "droyer01@gmail.com",
+		"url": "https://davidroyer.me"
 	},
+	"release": "standard-version && git push --follow-tags && npm publish",
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
@@ -24,9 +25,15 @@
 		"unicorn",
 		"fun"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"dependencies": {},
 	"devDependencies": {
+		"@commitlint/cli": "^12.0.1",
+		"@commitlint/config-conventional": "^12.0.1",
 		"ava": "^3.15.0",
+		"standard-version": "^9.1.1",
 		"xo": "^0.37.0"
 	}
 }
