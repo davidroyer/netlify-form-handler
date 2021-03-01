@@ -16,7 +16,8 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+    "release": "standard-version && git push --follow-tags && npm publish"
 	},
 	"files": [
 		"index.js"
