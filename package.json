@@ -1,6 +1,6 @@
 {
 	"name": "netlify-form-handler",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Easy form submission for to Netlify forms.",
 	"license": "MIT",
 	"repository": "davidroyer/netlify-form-handler",
@@ -17,7 +17,7 @@
 	},
 	"scripts": {
 		"test": "xo && ava",
-    "release": "standard-version && git push --follow-tags && npm publish"
+		"release": "standard-version && git push --follow-tags && npm publish"
 	},
 	"files": [
 		"index.js"
