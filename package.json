@@ -1,6 +1,6 @@
 {
 	"name": "netlify-form-handler",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Easy form submission handler for Netlify forms.",
 	"repository": "davidroyer/netlify-form-handler",
 	"author": {
@@ -14,7 +14,7 @@
 	],
 	"scripts": {
 		"build": "rollup -c",
-    "dev": "rollup -c -w",
+		"dev": "rollup -c -w",
 		"release": "standard-version && git push --follow-tags && npm publish",
 		"test": "xo && ava"
 	},
@@ -25,9 +25,9 @@
 		"access": "public"
 	},
 	"license": "MIT",
-  "main": "dist/netlify-form-handler.cjs.js",
-  "module": "dist/netlify-form-handler.esm.js",
-  "browser": "dist/netlify-form-handler.umd.js",
+	"main": "dist/netlify-form-handler.cjs.js",
+	"module": "dist/netlify-form-handler.esm.js",
+	"browser": "dist/netlify-form-handler.umd.js",
 	"engines": {
 		"node": ">=12"
 	},
