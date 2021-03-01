@@ -1,9 +1,17 @@
-const unicornFun = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
+/**
+ * @param {HTMLFormElement}
+ */
+export default async (formElement) => {
+  const formData = new FormData(formElement)
+  const body = new URLSearchParams(formData).toString()
 
-	return `${input} & ${postfix}`;
-};
+  const submissionSettings = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body
+  }
 
-export default unicornFun;
+  return await fetch('/', submissionSettings)
+}
